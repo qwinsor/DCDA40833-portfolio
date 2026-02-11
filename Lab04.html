@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualization Critique | Your Name</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="lab02.html">Lab 2: AI Evaluation</a>
+            <a href="lab03.html" class="active">Lab 3: Visualization Critique</a>
+            <a href="lab04.html" class="active">Lab 4: Tableau Visualization</a>
+            <!-- Add more lab links as the semester progresses -->
+        </nav>
+        <h1>Visualizations</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Visualization</h2>
+            <p>I chose to make my dataset using data about cars. I got all of this information from <a href="https://www.kaggle.com/datasets/tatheerabbas/car-price-classification-ready-data?resource=download" target="_blank">this kaggle</a> page. Below will be all of my visualizations as well as a brief description of what it represents and how I did it. </p>
+            <figure>
+                <img src="images/Dashboard1.png" alt="Dashboard 1" width="75%">
+            </figure>
+            <p> Top: This chart was meant to show that price goes up when quality goes up, however I proved my point wrong in the process. The data shows that the average price of a vehicle has nothing to do with the price or the fuel type. Each individual circle represents a different brand within that fuel type.
+            </p>
+            <p> Bottom: This chart shows the average efficiency score in each country. I think it is interesting because fuel consumption and carbon footprints are talked about so much, and this chart shows which countries cars are the most efficient.</p>
+            <figure>
+                <img src="images/Dashboard2.png" alt="Dashboard 2" width="75%">
+                <p> This is a simple and fun way that I chose to viisualize price in terms of body type and fuel type. The darker the green the more expenisive the car type is on average.</p>
+                <img src="images/Dashboard3.png" alt="Dashboard 3" width="75%">
+                <p>Both of these visualizations provve a discorrelation between price and horsepower or the manufacturing year. It is interesting because I really thought that both of these would have a linear correlation, however I was wrong. </p>
+            </figure>
+
+        </section>
+
+        <section>
+            <h2>Reflection & Analysis</h2>
+            
+            <h3>Data Preparation</h3>
+            <p>This dataset was extremely well organized. This allowed me to have an almost seamless experience while importing it into Tableau. The only thing that I had to do was change the category of the efficiency_score column to <strong>number</strong>.</p>
+
+            <h3>Design Choices</h3>
+            <p>the design was the hardest part for me as its hard to get creative with the way I display data. I chose to go with a straight forward bar chart for the majority of my charts, however the price vs. performance chart needed to be a scatterplot due to the number of variables I was displaying. My Price (fuel type vs. body type) chart was the most fun for me to make. I wanted to make a heatmap of the 6 countries that I have data on, however that didnt work out so i just made a 4 by 4 array instead. The final touch was using green because... money.</p>
+
+            <h3>Expected Patterns</h3>
+            <p>Most of the outcomes that I had drawn up in my head ended up being completely wrong. I assumed that the amount of horsepower a car had directly influenced the price of the car, however I failed to think about the different types of vehicles, and the fact that some of the most expensive cars arent necessarily that powerful.</p>
+            <p> The other thing I completely missed on was that the manufacturing year has nothing to do with the price either. I assumed that because this dataset is from 2005 to 2025 none of the cars were old enough to be coveted. This would mean that the newer cars are more expensive right? Wrong. For some reason the price seems to fluctuate with a peak and a floor every two years. </p>
+
+            <h3>Surprises and Outliers</h3>
+            <p>I think it is surprising that China has the most efficient cars on average. I always thought of China as a country that doesnt care about efficiency as long as the product is affordable. </p>
+
+            <h3>Questions for Further Investigation</h3>
+            <p>Maybe if I broke down the data more I could find out if the type of car or fuel has an effect on the efficiency of the car. I am sure that there is many ways to break find some sort of correlation other than the manufacturing country, it will just take more research.</p>
+            <h3>Tool Evaluation</h3>
+            <p>I really enjoy working with Tableau Public. I thought that it could do the majority of visualizations. I like the "Show Me" tab at the top right because it coached me through the process and helped me figure out how to make different carts. I tried to make a timeline but I couldnt figure it out. I am not sure if that is because the progrm doesnt allow it, or if it is a personal issue.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Quinn Winsor</p>
+    </footer>
+</body>
+</html>
